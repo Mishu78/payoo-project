@@ -33,6 +33,7 @@ document.getElementById("cashout-btn").addEventListener("click",function(){
      if(cashoutPin === "1234"){
         alert("cashout successful");
         console.log("New Balance",newBalance);
+        balanceElement.innerText=newBalance;
      }else{
         alert("pin invalid");
         return;
