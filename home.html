@@ -82,18 +82,26 @@
      <div class="card bg-base-100 w-full  shrink-0 shadow rounded-2xl">
       <div class="card-body">
         <fieldset class="fieldset">
-          <label class="label text-neutral font-bold">Agent Number</label>
-          <input id="cashout-number" maxlength="11" minlength="11" type="text" class="input w-full rounded-full bg-base-300" placeholder="Enter Agent number" value="01234567890" />
+             <label class="label text-neutral font-bold">Select Bank</label>
+            <select id="add-money-bank" class="select w-full bg-base-300 rounded-full">
+  <option disabled selected>Select a Bank</option>
+  <option value="DBBL">DBBL</option>
+  <option value="IBBL">IBBL</option>
+  <option value="CITY">City Bank</option>
+</select>
+<br>
+          <label class="label text-neutral font-bold">Bank Account Number</label>
+          <input id="add-money-number" maxlength="11" minlength="11" type="text" class="input w-full rounded-full bg-base-300" placeholder="Enter bank 11 digit number" value="01234567890" />
           <br>
 
-          <label class="label text-neutral font-bold">Amount</label>
-          <input id="cashout-amount" type="number" class="input w-full rounded-full bg-base-300" placeholder="Enter amount for withdraw" />
+          <label class="label text-neutral font-bold">Amount to add</label>
+          <input id="add-money-amount" type="number" class="input w-full rounded-full bg-base-300" placeholder="Enter amount to add" />
           <br>
 
           <label class="label text-neutral font-bold">4-digit pin</label>
-          <input id="cashout-pin" maxlength="4" type="password" class="input w-full rounded-full bg-base-300" placeholder="Enter 4-digit pin" />
+          <input id="add-money-pin" maxlength="4" type="password" class="input w-full rounded-full bg-base-300" placeholder="Enter 4-digit pin" />
           <div></div>
-          <button id="cashout-btn" class="btn btn-primary rounded-full mt-4">Withdraw Money</button>
+          <button id="add-money-btn" class="btn btn-primary rounded-full mt-4">Add Money</button>
         </fieldset>
       </div>
     </div>
