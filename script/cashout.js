@@ -26,11 +26,17 @@ document.getElementById("cashout-btn").addEventListener("click",function(){
         alert("invalid amount");
         return;
     }
-     console.log("New Balance",newBalance);
+    
 
      const cashoutPinInput= document.getElementById("cashout-pin");
      const cashoutPin=cashoutPinInput.value;
-     console.log(cashoutPin);
+     if(cashoutPin === "1234"){
+        alert("cashout successful");
+        console.log("New Balance",newBalance);
+     }else{
+        alert("pin invalid");
+        return;
+     }
 
 })
 
