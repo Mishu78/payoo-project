@@ -11,7 +11,11 @@ document.getElementById("cashout-btn").addEventListener("click",function(){
     const cashoutNumberInput=document.getElementById('cashout-number');
     const cashoutNumber=cashoutNumberInput.value;
     console.log(cashoutNumber);
-
+     //validation check
+     if(cashoutNumber.length!=11){
+        alert("invalid agent number");
+        return;
+     }
     //2.
     const cashoutAmountInput=document.getElementById("cashout-amount");
     const cashoutAmount=cashoutAmountInput.value;
