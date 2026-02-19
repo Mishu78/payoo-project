@@ -28,5 +28,9 @@ document.getElementById("cashout-btn").addEventListener("click",function(){
     }
      console.log("New Balance",newBalance);
 
+     const cashoutPinInput= document.getElementById("cashout-pin");
+     const cashoutPin=cashoutPinInput.value;
+     console.log(cashoutPin);
+
 })
 
