@@ -16,5 +16,17 @@ document.getElementById("cashout-btn").addEventListener("click",function(){
     const cashoutAmountInput=document.getElementById("cashout-amount");
     const cashoutAmount=cashoutAmountInput.value;
     console.log(cashoutAmount);
+    //3.
+    const balanceElement=document.getElementById('balance'); 
+    const balance=balanceElement.innerText;
+    console.log(balance);
+    //4.calculate new balance
+    const newBalance=Number(balance)-Number(cashoutAmount);
+    if(newBalance<0){
+        alert("invalid amount");
+        return;
+    }
+     console.log("New Balance",newBalance);
+
 })
 
