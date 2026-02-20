@@ -13,15 +13,17 @@ document.getElementById("add-money-btn").addEventListener("click",function(){
     }
     //3.get amount
     const amount = getValueFromInput("add-money-amount");
-    const newbalance=getBalance()+Number(amount);
+    const currentBalance=getBalance();
+    const newbalance=currentBalance+Number(amount);
 
     const pin =getValueFromInput("add-money-pin");
     if(pin==="1234"){
-        alert("add money success");
+        alert(`add money success from ${bankAccount} at ${new Date()}`);
         setBalance(newbalance);
     }
     else{
         alert("invalid pin");
+        return;
     }
    
 });
