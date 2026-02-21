@@ -20,6 +20,20 @@ document.getElementById("cashout-btn").addEventListener("click",function(){
       if(cashoutPin === "1234"){
         alert("cashout successful");
        setbalance(newBalance);
+
+       //1.history containerk dhore niye ashbo
+        const history=document.getElementById("history-container");
+        //2.new div create korbo
+        const newHistory=document.createElement("div");
+        //3.new div-> innerHtml add krobo
+        newHistory.innerHTML=`
+        <div class="transaction-card p-5 bg-base-100">
+         clashout success from ${cashoutAmount} Taka, account number ${accountNumber} at ${new Date()}
+        </div>
+        `;
+        //4.history container e new div append korbo
+        history.append(newHistory)
+  
       }else{
         alert("invalid pin");
         return;
