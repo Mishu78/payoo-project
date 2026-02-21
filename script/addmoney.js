@@ -31,7 +31,7 @@ document.getElementById("add-money-btn").addEventListener("click",function(){
         </div>
         `;
         //4.history container e new div append korbo
-        history.append(newHistory)
+        history.append(newHistory);
     }
     else{
         alert("invalid pin");
